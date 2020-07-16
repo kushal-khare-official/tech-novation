@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Play&display=swap");
+
+.open {
+  animation: all 1s cubic-bezier(0.55, 0.06, 0.68, 0.19);
+  transform: rotateY(-30deg) translateX(35%) scale(0.5) perspective(800px) !important;
+  /* animation: abc 5s cubic-bezier(0.47, 0, 0.75, 0.72) infinite; */
+}
+
+.nav {
+  position: fixed;
+  top: 20%;
+  left: 5%;
+  font-family: "play", sans-serif;
+  perspective: 1000px;
+  perspective-origin: center;
+}
+
+.nav-list {
+  list-style: none;
+  transform: rotateY(30deg) rotateX(5deg);
+}
+
+.nav-items {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 5px auto;
+  background-color: #fff;
+  width: 500px;
+  font-size: 2rem;
+  padding: 0.75rem 4rem;
+  margin-left: 1rem;
+  color: #444;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 0 10px 0px #666;
+}
+
+.nav-items:hover {
+  color: white;
+  background: rgb(173, 116, 116);
+  background: linear-gradient(
+    175deg,
+    rgba(173, 116, 116, 1) 0%,
+    rgba(130, 92, 93, 1) 50%,
+    rgba(69, 35, 35, 1) 50%,
+    rgba(104, 55, 55, 1) 100%
+  );
+}
+
+.nav-items:hover::before {
+  content: "";
+  box-shadow: -60px 0 10px 15px #fff, -60px 0 0px 16px #fff,
+    -60px 0 0px 10px #fff;
+}
+
+@keyframes abc {
+  0% {
+    transform: rotateY(-30deg) translateX(35%) scale(0.5) perspective(800px);
+  }
+  50% {
+    transform: rotateY(-35deg) translateX(35%) scale(0.5) perspective(800px);
+  }
+  100% {
+    transform: rotateY(-30deg) translateX(35%) scale(0.5) perspective(800px);
+  }
+}

@@ -1,0 +1,134 @@
+#main-content {
+  max-width: 500px;
+}
+
+#form-head {
+  font-size: 0.75rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 0;
+  margin: 0 20px;
+  transition: all 0.8s 0.6s;
+  color: black;
+}
+#form-head h1,
+#form-head p {
+  padding: 0;
+  margin: 0;
+}
+#form-head .pre {
+  display: block;
+}
+#form-head .post {
+  display: none;
+}
+
+.pages {
+  position: absolute;
+  top: 15%;
+  bottom: 5%;
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.form-submitted#form-head {
+  transform: translateY(50%);
+  font-size: 5vw;
+  text-align: center;
+}
+.form-submitted#form-head .pre {
+  display: none;
+}
+.form-submitted#form-head .post {
+  display: block;
+}
+
+.input {
+  background: rgba(0, 0, 0, 0.2);
+  display: block;
+  height: 50px;
+  width: 100%;
+  margin: 10px 0;
+  padding: 0 10px;
+  border-width: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  transform: translateX(0);
+}
+
+:placeholder-shown {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 90%;
+}
+
+@keyframes error {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-6px);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(6px);
+  }
+}
+
+@keyframes wiggle {
+  0%,
+  100% {
+    transform: rotate(-15deg);
+  }
+  50% {
+    transform: rotate(15deg);
+  }
+}
+
+.add-event {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  line-height: 32px;
+  cursor: pointer;
+  box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.302),
+    0 1px 3px 1px rgba(60, 64, 67, 0.149);
+  font-size: 0.875rem;
+  letter-spacing: 0.25px;
+  align-items: center;
+  border-radius: 24px;
+  color: #3c4043;
+  display: inline-flex;
+  font-weight: 500;
+  height: 48px;
+  min-width: 56px;
+  padding: 0 24px 0 0;
+}
+
+.add-event::before {
+  background-image: url("../../assets/images/create.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  content: "";
+  height: 48px;
+  min-width: 56px;
+}
+
+@media (min-width: 961px) {
+  .form-submitted#form-head {
+    font-size: 35px;
+  }
+  .add-event {
+    left: 30%;
+  }
+}

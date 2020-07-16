@@ -1,0 +1,22 @@
+.price-tag {
+  float: left;
+  transform: rotate(163.5deg) rotate(180deg) translateX(-10%);
+  z-index: 25;
+}
+.price {
+  font-size: 1.5rem;
+  line-height: 1;
+  float: left;
+  background: red;
+  color: white;
+  padding: 0.5em 1em;
+}
+.price-tag:before {
+  float: right;
+  content: " ";
+  border-right: solid 1.5rem red;
+  border-left: solid 1.5rem transparent;
+  border-top: solid 1.5rem transparent;
+  border-bottom: solid 1.5rem transparent;
+  transform: rotateY(180deg);
+}
