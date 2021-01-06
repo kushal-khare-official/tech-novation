@@ -7,7 +7,7 @@
     "@material-ui/icons": "^4.9.1",
     "animate.css": "^4.1.0",
     "aphrodite": "^2.4.0",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "desandro-classie": "^1.0.1",
     "firebase": "^7.15.5",
     "fontfaceobserver": "^2.1.0",
